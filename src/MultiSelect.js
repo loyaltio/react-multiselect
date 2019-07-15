@@ -251,7 +251,7 @@ export default class MultiSelect extends React.Component {
       <div className="criteria-extended">
         <div className="criteria-list">
           <button type="button"
-                  className="criteria-selector aui-button aui-button-subtle drop-arrow"
+                  className={`criteria-selector aui-button aui-button-subtle drop-arrow ${toggleDown ? 'is-open' : ''}`}
                   style={{
                     backgroundColor: 'rgba(212, 212, 212, 0.5)', color: '#333',
                     borderColor: '#adadad'
