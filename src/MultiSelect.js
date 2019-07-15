@@ -39,7 +39,6 @@ export default class MultiSelect extends React.Component {
       searchText: '',
       allChecked: false
     };
-    console.log('test');
     this.toggleUp = this.toggleUp.bind(this);
     this.toggleDown = this.toggleDown.bind(this);
     this.stopPropagation = this.stopPropagation.bind(this);
@@ -244,8 +243,6 @@ export default class MultiSelect extends React.Component {
   render() {
     const {hasSelectAll, hasSearch} = this.props;
     const {toggleDown, selectedValue, top, left, searchText, allChecked} = this.state;
-    console.log('multi',this.props);
-    console.log('multi',selectedValue);
 
     return (
       <div className="criteria-extended">

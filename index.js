@@ -62,7 +62,6 @@ class Root extends React.Component {
   };
 
   onChangeShowNumber = (event) => {
-    console.log(event.target.value);
     this.setState({
       showTextNumber: event.target.value,
     });
@@ -103,7 +102,6 @@ class Root extends React.Component {
 
   render() {
     const {dataSource,changeDataSource, selectedValue, withChildren, showTextNumber, buttonText, hasSelectAll, hasSearch} = this.state;
-    console.log('change',changeDataSource);
     return (
       <article>
         <header>
